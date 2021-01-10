@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
   navigationItems: NavigationItem[] = [
     { title: 'Home', fragment: 'home' },
     { title: 'About', fragment: 'about' },
+    { title: 'Experience', fragment: 'experience' },
   ];
   
   constructor() { }

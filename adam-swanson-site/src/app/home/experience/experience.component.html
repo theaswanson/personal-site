@@ -1,0 +1,20 @@
+<div class="card" id="experience">
+  <div class="card-content">
+    <div class="info">
+      <div class="header">
+        <div class="title">Experience</div>
+      </div>
+    </div>
+    <div class="milestones">
+      <div class="milestone" *ngFor="let milestone of experience">
+        <div class="info">
+          <div class="title">{{milestone.title}}</div>
+          <div class="subtitle">{{milestone.subtitle}}</div>
+        </div>
+        <div class="date">
+          {{milestone.date}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
