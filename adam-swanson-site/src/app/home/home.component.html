@@ -1,40 +1,11 @@
 <div class="content" id="home">
   <div class="column">
-    <div class="desktop-navigation card">
-      <div class="card-content">
-        <ul>
-          <li *ngFor="let item of navigationItems"><a [routerLink]="['./']" [fragment]="item.fragment">{{item.title}}</a></li>
-        </ul>
-      </div>
-    </div>
+    <app-desktop-navigation [navigationItems]="navigationItems"></app-desktop-navigation>
   </div>
   <div class="main-column">
-    <div class="mobile-navigation">
-      <fa-icon [icon]="faBars" size="lg" (click)="toggleMobileNavigation()"></fa-icon>
-      <ul *ngIf="mobileNavigationOpen" (click)="toggleMobileNavigation()">
-        <li *ngFor="let item of navigationItems"><a [routerLink]="['./']" [fragment]="item.fragment">{{item.title}}</a></li>
-      </ul>
-    </div>
-    <div class="card">
-      <div class="card-content">
-        <div class="info">
-          <div class="header">
-            <div class="title">Adam Swanson</div>
-            <div class="subtitle">Software Developer</div>
-          </div>
-          <div class="icons">
-            <div class="icon" *ngFor="let item of socialItems">
-              <a [href]="item.href" target="_blank">
-                <fa-icon [icon]="item.icon" size="lg"></fa-icon>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="image">
-          <img src="/assets/img/adam.jpg" style="height: 20rem" />
-        </div>
-      </div>
-    </div>
+    <app-mobile-navigation [navigationItems]="navigationItems"></app-mobile-navigation>
+    <app-header></app-header>
+    <app-about class="list-item"></app-about>
   </div>
   <div class="column"></div>
 </div>
