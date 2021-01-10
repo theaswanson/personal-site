@@ -9,6 +9,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { DesktopNavigationComponent } from './navigation/desktop-navigation/desktop-navigation.component';
 import { MobileNavigationComponent } from './navigation/mobile-navigation/mobile-navigation.component';
 import { HeaderComponent } from './home/header/header.component';
+import { AboutComponent } from './home/about/about.component';
 
 const ROUTES = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -25,7 +26,8 @@ const ROUTER_OPTIONS = {
     HomeComponent,
     DesktopNavigationComponent,
     MobileNavigationComponent,
-    HeaderComponent
+    HeaderComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

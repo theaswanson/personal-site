@@ -29,5 +29,9 @@
     margin: 0 $column-padding;
     flex: 1 1 $desktop;
     max-width: $desktop;
+
+    >.list-item {
+      margin: 0 $column-padding; //TODO: fix this hack
+    }
   }
 }
