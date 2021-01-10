@@ -10,6 +10,7 @@ import { DesktopNavigationComponent } from './navigation/desktop-navigation/desk
 import { MobileNavigationComponent } from './navigation/mobile-navigation/mobile-navigation.component';
 import { HeaderComponent } from './home/header/header.component';
 import { AboutComponent } from './home/about/about.component';
+import { ExperienceComponent } from './home/experience/experience.component';
 
 const ROUTES = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -27,7 +28,8 @@ const ROUTER_OPTIONS = {
     DesktopNavigationComponent,
     MobileNavigationComponent,
     HeaderComponent,
-    AboutComponent
+    AboutComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
