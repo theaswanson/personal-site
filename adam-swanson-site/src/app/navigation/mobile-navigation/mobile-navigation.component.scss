@@ -1,0 +1,33 @@
+@import '../../../variables.scss';
+
+.mobile-navigation {
+  background-color: black;
+  position: sticky;
+  top: 0;
+  padding: 2rem 0;
+
+  .ng-fa-icon {
+    padding: 2rem;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    li {
+      padding: 1.5rem 0;
+
+      a {
+        padding: 1.5rem 0;
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}

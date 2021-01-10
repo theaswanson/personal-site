@@ -6,6 +6,8 @@ import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { DesktopNavigationComponent } from './navigation/desktop-navigation/desktop-navigation.component';
+import { MobileNavigationComponent } from './navigation/mobile-navigation/mobile-navigation.component';
 
 const ROUTES = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -19,7 +21,9 @@ const ROUTER_OPTIONS = {
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    DesktopNavigationComponent,
+    MobileNavigationComponent
   ],
   imports: [
     BrowserModule,
