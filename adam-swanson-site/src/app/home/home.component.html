@@ -1,6 +1,20 @@
-<div class="content">
-  <div class="column"></div>
+<div class="content" id="home">
+  <div class="column">
+    <div class="desktop-navigation card">
+      <div class="card-content">
+        <ul>
+          <li *ngFor="let item of navigationItems"><a [routerLink]="['./']" [fragment]="item.fragment">{{item.title}}</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
   <div class="main-column">
+    <div class="mobile-navigation">
+      <fa-icon [icon]="faBars" size="lg" (click)="toggleMobileNavigation()"></fa-icon>
+      <ul *ngIf="mobileNavigationOpen" (click)="toggleMobileNavigation()">
+        <li *ngFor="let item of navigationItems"><a [routerLink]="['./']" [fragment]="item.fragment">{{item.title}}</a></li>
+      </ul>
+    </div>
     <div class="card">
       <div class="card-content">
         <div class="info">
@@ -9,9 +23,7 @@
             <div class="subtitle">Software Developer</div>
           </div>
           <div class="icons">
-            <fa-icon [icon]="faTwitter" size="lg"></fa-icon>
-            <fa-icon [icon]="faLinkedin" size="lg"></fa-icon>
-            <fa-icon [icon]="faGithub" size="lg"></fa-icon>
+            <fa-icon *ngFor="let item of socialItems" [icon]="item.icon" size="lg" [routerLink]="item.href"></fa-icon>
           </div>
         </div>
         <div class="image">

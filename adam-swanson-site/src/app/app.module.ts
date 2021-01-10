@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { RouterModule, Routes } from '@angular/router';
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -12,6 +12,10 @@ const ROUTES = [
   { path: '**', redirectTo: '' }
 ] as Routes;
 
+const ROUTER_OPTIONS = {
+  anchorScrolling: 'enabled'
+} as ExtraOptions;
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +23,7 @@ const ROUTES = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(ROUTES),
+    RouterModule.forRoot(ROUTES, ROUTER_OPTIONS),
     FlexLayoutModule,
     FontAwesomeModule
   ],

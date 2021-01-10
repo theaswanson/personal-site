@@ -1,25 +1,94 @@
 @import '../../variables';
 
+$column-padding: 3rem;
+
 .content {
   display: flex;
 
   @media screen and (min-width: $desktop) {
+    padding-top: $column-padding;
+  }
+
+  @media screen and (min-width: $desktop) {
     .column {
+      display: flex;
+      justify-content: flex-end;
       flex: 1 1 0%;
       box-sizing: border-box;
+
+      &:first-child {
+        margin-left: $column-padding;
+      }
+    }
+  }
+
+  .desktop-navigation {
+    display: none;
+
+    @media screen and (min-width: $desktop) {
+      display: block;
+      width: fit-content;
+      position: sticky;
+      top: $column-padding;
+
+      .card-content {
+        padding: 1.5rem 3rem;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          padding: 1.5rem 0;
+
+          a {
+            padding: 1.5rem 0;
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .mobile-navigation {
+    background-color: black;
+    padding: 2rem;
+    position: sticky;
+    top: 0;
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+
+      li {
+        padding: 1.5rem 0;
+
+        a {
+          padding: 1.5rem 0;
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+
+    @media screen and (min-width: $desktop) {
+      display: none;
     }
   }
 
   .main-column {
-    $width-mobile: 375px;
-
     flex: 1 1;
     box-sizing: border-box;
 
     @media screen and (min-width: $desktop) {
+      margin: 0 $column-padding;
       flex: 1 1 $desktop;
       max-width: $desktop;
-      min-width: $desktop;
     }
   }
 }
