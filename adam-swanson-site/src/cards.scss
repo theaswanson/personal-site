@@ -54,14 +54,21 @@
 
       .icons {
         padding: 2rem 0;
+        max-width: 25rem;
+        display: flex;
+        justify-content: space-between;
 
         @media screen and (min-width: $desktop) {
           padding-top: 3rem;
         }
 
-        max-width: 25rem;
-        display: flex;
-        justify-content: space-between;
+        .icon {
+          cursor: pointer;
+
+          a {
+            color: white;
+          }
+        }
       }
     }
 
