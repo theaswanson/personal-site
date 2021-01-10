@@ -4,26 +4,7 @@
   </div>
   <div class="main-column">
     <app-mobile-navigation [navigationItems]="navigationItems"></app-mobile-navigation>
-    <div class="card">
-      <div class="card-content">
-        <div class="info">
-          <div class="header">
-            <div class="title">Adam Swanson</div>
-            <div class="subtitle">Software Developer</div>
-          </div>
-          <div class="icons">
-            <div class="icon" *ngFor="let item of socialItems">
-              <a [href]="item.href" target="_blank">
-                <fa-icon [icon]="item.icon" size="lg"></fa-icon>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="image">
-          <img src="/assets/img/adam.jpg" style="height: 20rem" />
-        </div>
-      </div>
-    </div>
+    <app-header></app-header>
   </div>
   <div class="column"></div>
 </div>

@@ -8,6 +8,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { DesktopNavigationComponent } from './navigation/desktop-navigation/desktop-navigation.component';
 import { MobileNavigationComponent } from './navigation/mobile-navigation/mobile-navigation.component';
+import { HeaderComponent } from './home/header/header.component';
 
 const ROUTES = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -23,7 +24,8 @@ const ROUTER_OPTIONS = {
     AppComponent,
     HomeComponent,
     DesktopNavigationComponent,
-    MobileNavigationComponent
+    MobileNavigationComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
