@@ -1,0 +1,20 @@
+<div class="card" id="skills">
+  <div class="card-content">
+    <div class="info">
+      <div class="header">
+        <div class="title">Skills</div>
+      </div>
+    </div>
+    <div class="skills-list">
+      <div class="category" *ngFor="let category of getCategories()">
+        <div class="title">{{category}}</div>
+        <div class="skills">
+          <div class="skill" *ngFor="let skill of getSkills(category)">
+            <div class="image"><img [src]="getImage(skill)" /></div>
+            <div class="name">{{skill.name}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

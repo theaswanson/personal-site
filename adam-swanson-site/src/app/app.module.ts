@@ -11,6 +11,7 @@ import { MobileNavigationComponent } from './navigation/mobile-navigation/mobile
 import { HeaderComponent } from './home/header/header.component';
 import { AboutComponent } from './home/about/about.component';
 import { ExperienceComponent } from './home/experience/experience.component';
+import { SkillsComponent } from './home/skills/skills.component';
 
 const ROUTES = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -29,7 +30,8 @@ const ROUTER_OPTIONS = {
     MobileNavigationComponent,
     HeaderComponent,
     AboutComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

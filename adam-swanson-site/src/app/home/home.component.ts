@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
     { title: 'Home', fragment: 'home' },
     { title: 'About', fragment: 'about' },
     { title: 'Experience', fragment: 'experience' },
+    { title: 'Skills', fragment: 'skills' },
   ];
   
   constructor() { }
