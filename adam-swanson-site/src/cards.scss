@@ -172,6 +172,10 @@
         padding-top: 1rem;
         font-size: 2rem;
         font-weight: 400;
+
+        @media screen and (min-width: $desktop) {
+          text-align: right;
+        }
       }
 
       &:not(:last-child) {

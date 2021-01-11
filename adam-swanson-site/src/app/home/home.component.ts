@@ -9,10 +9,11 @@ import { NavigationItem } from '../models';
 export class HomeComponent implements OnInit {
 
   navigationItems: NavigationItem[] = [
-    { title: 'Home', fragment: 'home' },
-    { title: 'About', fragment: 'about' },
-    { title: 'Experience', fragment: 'experience' },
-    { title: 'Skills', fragment: 'skills' },
+    new NavigationItem('Home'),
+    new NavigationItem('About'),
+    new NavigationItem('Experience'),
+    new NavigationItem('Skills'),
+    new NavigationItem('Achievements')
   ];
   
   constructor() { }

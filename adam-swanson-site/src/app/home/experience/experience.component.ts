@@ -1,10 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-class Milestone {
-  title: string;
-  subtitle: string;
-  date: string;
-}
+import { Milestone } from 'src/app/models';
 
 @Component({
   selector: 'app-experience',
