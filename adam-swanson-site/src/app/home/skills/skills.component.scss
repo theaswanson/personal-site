@@ -6,6 +6,10 @@
   gap: 4rem;
   padding-top: 1rem;
 
+  @media screen and (min-width: $desktop) {
+    padding-top: 3rem;
+  }
+
   @media screen and (min-width: $desktop-lg) {
     grid-template-columns: repeat(2, 1fr);
   }
