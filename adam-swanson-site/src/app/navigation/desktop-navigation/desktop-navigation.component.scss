@@ -26,6 +26,15 @@
           padding: 1rem 0;
           text-decoration: none;
           color: white;
+          cursor: pointer;
+
+          &:hover {
+            color: #aaaaaa;
+          }
+
+          &:active {
+            color: #888888;
+          }
         }
       }
     }

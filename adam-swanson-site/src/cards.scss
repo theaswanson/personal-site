@@ -87,10 +87,12 @@
 
 .card {
   height: fit-content;
+  scroll-margin-top: $mobile-nav-height;
 
   @media screen and (min-width: $desktop) {
     background: rgba(255, 255, 255, 0.1) 0% 0% no-repeat padding-box;
     border-radius: 1.5rem;
+    scroll-margin-top: $column-padding;
   }
 
   .card-content {

@@ -2,7 +2,7 @@
   <div class="card-content">
     <ul>
       <li *ngFor="let item of navigationItems">
-        <a [routerLink]="['./']" [fragment]="item.fragment">{{item.title}}</a>
+        <a (click)="navigate(item.fragment)">{{item.title}}</a>
       </li>
     </ul>
   </div>

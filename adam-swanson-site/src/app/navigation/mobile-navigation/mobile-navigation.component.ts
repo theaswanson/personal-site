@@ -8,8 +8,8 @@ import { NavigationItem } from 'src/app/models';
   styleUrls: ['./mobile-navigation.component.scss']
 })
 export class MobileNavigationComponent implements OnInit {
-  
-  @Input() navigationItems: NavigationItem[]; 
+
+  @Input() navigationItems: NavigationItem[];
 
   faBars = faBars;
   navigationOpen = false;
@@ -23,4 +23,11 @@ export class MobileNavigationComponent implements OnInit {
     this.navigationOpen = !this.navigationOpen;
   }
 
+  navigate(fragment: string) {
+    this.navigationOpen = false;
+    setTimeout(() => {
+      const element = document.querySelector(`#${fragment}`);
+      element.scrollIntoView({ behavior: 'smooth' });
+    }, 1)
+  }
 }
