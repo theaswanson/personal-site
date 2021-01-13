@@ -6,11 +6,13 @@
       </div>
     </div>
     <div class="skills-list">
-      <div class="category" *ngFor="let category of getCategories()">
+      <div class="category" *ngFor="let category of categories">
         <div class="title">{{category}}</div>
         <div class="skills">
           <div class="skill" *ngFor="let skill of getSkills(category)">
-            <div class="image"><img [src]="getImage(skill)" /></div>
+            <div class="image">
+              <img [src]="getImagePath(skill, category)" />
+            </div>
             <div class="name">{{skill.name}}</div>
           </div>
         </div>

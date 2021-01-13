@@ -1,26 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
-class Skill {
-  category: string;
-  name: string;
-  private _imageName?: string;
-  get imageName(): string {
-    if (this._imageName === undefined || this._imageName === null) {
-      return this.name.toLowerCase();
-    } else {
-      return this._imageName;
-    }
-  }
-  set imageName(name: string) {
-    this._imageName = name;
-  }
-
-  constructor(category: string, name: string, imageName?: string) {
-    this.category = category;
-    this.name = name;
-    this.imageName = imageName;
-  }
-}
+import { Skill, CategoricalSkills } from 'src/app/models';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-skills',
@@ -30,43 +10,31 @@ class Skill {
 export class SkillsComponent implements OnInit {
 
   skillsImagesPath = '/assets/img/skills';
+  skills: CategoricalSkills[];
+  categories: string[];
 
-  skills: Skill[] = [
-    new Skill('Languages', 'C#', 'csharp'),
-    new Skill('Languages', 'C++', 'cplusplus'),
-    new Skill('Languages', 'Java'),
-    new Skill('Languages', 'JavaScript'),
-    new Skill('Languages', 'Swift'),
-    new Skill('Languages', 'TypeScript'),
-    new Skill('Frameworks', 'Angular'),
-    new Skill('Frameworks', 'Bootstrap'),
-    new Skill('Frameworks', '.NET 5, .NET Core 3.1', 'dotnet'),
-    new Skill('Frameworks', 'Material Design', 'material'),
-    new Skill('Frameworks', 'React'),
-    new Skill('Technologies', 'Docker'),
-    new Skill('Technologies', 'EventStore'),
-    new Skill('Technologies', 'Helm'),
-    new Skill('Technologies', 'Kubernetes'),
-    new Skill('Technologies', 'Progress OpenEdge', 'openedge'),
-    new Skill('Technologies', 'RabbitMQ'),
-    new Skill('Technologies', 'Terraform'),
-  ];
-
-  constructor() { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
-  }
-
-  getCategories(): string[] {
-    return this.skills.map(skill => skill.category).filter((skill, i, ar) => ar.indexOf(skill) === i);
+    this.skills = this.dataService.getSkills();
+    this.categories = this.getCategories();
   }
 
   getSkills(category: string): Skill[] {
-    return this.skills.filter(skill => skill.category === category);
+    return this.skills.find(skill => skill.category === category)?.skills ?? [];
+  }
+  
+  getImagePath(skill: Skill, category: string): string {
+    const imageName = skill.shortName ?? skill.name.toLowerCase();
+    return `${this.skillsImagesPath}/${category.toLowerCase()}/${imageName}.png`;
   }
 
-  getImage(skill: Skill): string {
-    return `${this.skillsImagesPath}/${skill.category.toLowerCase()}/${skill.imageName}.png`;
+  private getCategories(): string[] {
+    return this.getUniqueValues(this.skills.map(skill => skill.category));
+  }
+
+  private getUniqueValues(values: any[]) {
+    return values.filter((value, i, ar) => ar.indexOf(value) === i);
   }
 
 }
