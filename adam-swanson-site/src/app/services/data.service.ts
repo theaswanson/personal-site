@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { CategoricalSkills } from '../models';
+import { CategoricalSkills, Milestone } from '../models';
 import skillsData from './data/skills.json';
+import achievementsData from './data/achievements.json';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,10 @@ export class DataService {
   constructor() { }
 
   getSkills(): CategoricalSkills[] {
-    let skills = skillsData as CategoricalSkills[];
-    return skills;
+    return skillsData as CategoricalSkills[];
+  }
+
+  getAchievements(): Milestone[] {
+    return achievementsData as Milestone[];
   }
 }
