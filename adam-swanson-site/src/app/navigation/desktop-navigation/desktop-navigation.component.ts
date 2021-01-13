@@ -9,10 +9,15 @@ import { NavigationItem } from 'src/app/models';
 export class DesktopNavigationComponent implements OnInit {
 
   @Input() navigationItems: NavigationItem[];
-  
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  navigate(fragment: string) {
+    const element = document.querySelector(`#${fragment}`);
+    element.scrollIntoView({ behavior: 'smooth' });
   }
 
 }

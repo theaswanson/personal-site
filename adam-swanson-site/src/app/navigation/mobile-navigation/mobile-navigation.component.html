@@ -1,8 +1,9 @@
+<div class="mobile-nav-spacer"></div>
 <div class="mobile-navigation">
   <fa-icon [icon]="faBars" size="lg" (click)="toggleNavigation()"></fa-icon>
-  <ul *ngIf="navigationOpen" (click)="toggleNavigation()">
+  <ul *ngIf="navigationOpen">
     <li *ngFor="let item of navigationItems">
-      <a [routerLink]="['./']" [fragment]="item.fragment">{{item.title}}</a>
+      <a (click)="navigate(item.fragment)">{{item.title}}</a>
     </li>
   </ul>
 </div>

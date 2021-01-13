@@ -1,16 +1,28 @@
 @import '../../../variables.scss';
 
+.mobile-nav-spacer {
+  height: $mobile-nav-height;
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
 .mobile-navigation {
+  width: 100%;
   background-color: black;
-  position: sticky;
+  position: fixed;
   top: 0;
-  padding: 2rem 0;
+  height: $mobile-nav-height;
+  display: flex;
+  flex-direction: column;
 
   .ng-fa-icon {
     padding: 2rem;
   }
 
   ul {
+    background-color: #1b1b1b;
     list-style-type: none;
     padding: 0;
     margin: 0;
