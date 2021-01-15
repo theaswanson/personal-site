@@ -19,6 +19,7 @@
 
   .ng-fa-icon {
     padding: 2rem;
+    cursor: pointer;
   }
 
   ul {
@@ -35,11 +36,16 @@
         padding: 1.5rem 0;
         text-decoration: none;
         color: white;
+        cursor: pointer;
       }
     }
   }
 
   @media screen and (min-width: $desktop) {
     display: none;
+  }
+
+  .internal-items {
+    border-bottom: 1px solid $darkgray;
   }
 }
