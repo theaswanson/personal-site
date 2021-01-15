@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Milestone } from 'src/app/models';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-experience',
@@ -8,16 +9,12 @@ import { Milestone } from 'src/app/models';
 })
 export class ExperienceComponent implements OnInit {
 
-  experience: Milestone[] = [
-    { title: 'Aptera Software, Inc.', subtitle: 'Software Developer', date: 'May 2020 - Present' },
-    { title: 'Aptera Software, Inc.', subtitle: 'Software Development Intern', date: 'September 2019 - May 2020' },
-    { title: 'Rea Magnet Wire', subtitle: 'Programming Systems Analyst Intern', date: 'Summer 2019' },
-    { title: 'West Side Tractor Sales', subtitle: 'Software Development Intern', date: 'Summer & Winter 2018' },
-    { title: 'Aubry Lane', subtitle: 'Software Development Intern', date: 'Summer 2017' },
-  ]
-  constructor() { }
+  experience: Milestone[];
+
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
+    this.experience = this.dataService.getExperience();
   }
 
 }
