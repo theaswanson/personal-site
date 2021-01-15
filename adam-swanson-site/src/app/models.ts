@@ -21,3 +21,13 @@ export class Milestone {
   subtitle: string;
   date: string;
 }
+
+export class CategoricalSkills {
+  category: string;
+  skills: Skill[];
+}
+
+export class Skill {
+  name: string;
+  shortName: string;
+}

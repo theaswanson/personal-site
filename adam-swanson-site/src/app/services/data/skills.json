@@ -1,0 +1,36 @@
+[
+    {
+        "category": "Languages",
+        "skills": [
+            {"name": "C#", "shortName": "csharp"},
+            {"name": "C++", "shortName": "cplusplus"},
+            {"name": "Java"},
+            {"name": "JavaScript"},
+            {"name": "Swift"},
+            {"name": "TypeScript"}
+        ]
+    },
+    {
+        "category": "Frameworks",
+        "skills": [
+            {"name": "Angular"},
+            {"name": "Bootstrap"},
+            {"name": ".NET 5, .NET Core 3.1", "shortName": "dotnet"},
+            {"name": "Material Design", "shortName": "material"},
+            {"name": "React"}
+        ]
+    },
+    {
+        "category": "Technologies",
+        "skills":
+        [
+            {"name": "Docker"},
+            {"name": "EventStore"},
+            {"name": "Helm"},
+            {"name": "Kubernetes"},
+            {"name": "Progress OpenEdge", "shortName": "openedge"},
+            {"name": "RabbitMQ"},
+            {"name": "Terraform"}
+        ]
+    }
+]
