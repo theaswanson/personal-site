@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationItem } from '../models';
+import { ExternalNavigationItem, NavigationItem } from '../models';
 
 @Component({
   selector: 'app-home',
@@ -15,6 +15,10 @@ export class HomeComponent implements OnInit {
     new NavigationItem('Skills'),
     new NavigationItem('Achievements')
   ];
+
+  externalNavigationItems: ExternalNavigationItem[] = [
+    { title: 'Blog', url: 'https://blog.layerseven.net' }
+  ]
   
   constructor() { }
 

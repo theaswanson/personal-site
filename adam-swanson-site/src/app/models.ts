@@ -11,6 +11,11 @@ export class NavigationItem {
   }
 }
 
+export class ExternalNavigationItem {
+  title: string;
+  url: string;
+}
+
 export class SocialItem {
   icon: IconDefinition;
   href: string;

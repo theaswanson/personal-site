@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { NavigationItem } from 'src/app/models';
+import { ExternalNavigationItem, NavigationItem } from 'src/app/models';
 
 @Component({
   selector: 'app-mobile-navigation',
@@ -10,6 +10,7 @@ import { NavigationItem } from 'src/app/models';
 export class MobileNavigationComponent implements OnInit {
 
   @Input() navigationItems: NavigationItem[];
+  @Input() externalNavigationItems: ExternalNavigationItem[];
 
   faBars = faBars;
   navigationOpen = false;
@@ -23,11 +24,17 @@ export class MobileNavigationComponent implements OnInit {
     this.navigationOpen = !this.navigationOpen;
   }
 
-  navigate(fragment: string) {
+  navigate(fragment?: string) {
     this.navigationOpen = false;
-    setTimeout(() => {
-      const element = document.querySelector(`#${fragment}`);
-      element.scrollIntoView({ behavior: 'smooth' });
-    }, 1)
+    if (fragment) {
+      setTimeout(() => {
+        this.scrollToElement(fragment);
+      }, 1);
+    }
+  }
+
+  private scrollToElement(id: string) {
+    const element = document.querySelector(`#${id}`);
+    element.scrollIntoView({ behavior: 'smooth' });
   }
 }

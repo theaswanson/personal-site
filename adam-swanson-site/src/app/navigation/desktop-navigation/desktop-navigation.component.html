@@ -1,8 +1,13 @@
 <div class="desktop-navigation card">
   <div class="card-content">
-    <ul>
+    <ul class="internal-items">
       <li *ngFor="let item of navigationItems">
         <a (click)="navigate(item.fragment)">{{item.title}}</a>
+      </li>
+    </ul>
+    <ul class="external-items">
+      <li *ngFor="let item of externalNavigationItems">
+        <a [href]="item.url" target="_blank">{{item.title}}</a>
       </li>
     </ul>
   </div>

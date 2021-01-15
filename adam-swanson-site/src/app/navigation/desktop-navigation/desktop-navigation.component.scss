@@ -38,5 +38,14 @@
         }
       }
     }
+
+    .internal-items {
+      border-bottom: 1px solid $darkgray;
+      padding-bottom: 1rem;
+    }
+
+    .external-items {
+      padding-top: 1rem;
+    }
   }
 }
