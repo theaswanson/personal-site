@@ -1,0 +1,11 @@
+.icon {
+  .ng-fa-icon {
+    &:hover {
+      color: #aaaaaa;
+    }
+
+    &:active {
+      color: #888888;
+    }
+  }
+}
