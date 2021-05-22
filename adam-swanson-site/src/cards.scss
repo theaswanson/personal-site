@@ -150,7 +150,7 @@
       }
 
       &:first-child {
-        padding-top: 1rem;
+        padding-top: 2rem;
 
         @media screen and (min-width: $desktop-lg) {
           padding-top: 3rem;
@@ -161,6 +161,11 @@
         max-width: 5rem;
         max-height: 5rem;
         padding-right: 3rem;
+        padding-bottom: 1rem;
+
+        @media screen and (min-width: $desktop-lg) {
+          padding-bottom: 0;
+        }
 
         img {
           width: 100%;
