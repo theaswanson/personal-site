@@ -12,4 +12,9 @@ export class AboutComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  navigate(fragment: string) {
+    const element = document.querySelector(`#${fragment}`);
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+
 }

@@ -2,26 +2,31 @@
   {
     "title": "Aptera Software, Inc.",
     "subtitle": "Software Developer",
-    "date": "May 2020 - Present"
+    "date": "May 2020 - Present",
+    "image": "aptera.png"
   },
   {
     "title": "Aptera Software, Inc.",
     "subtitle": "Software Development Intern",
-    "date": "September 2019 - May 2020"
+    "date": "September 2019 - May 2020",
+    "image": "aptera.png"
   },
   {
     "title": "Rea Magnet Wire",
     "subtitle": "Programming Systems Analyst Intern",
-    "date": "Summer 2019"
+    "date": "Summer 2019",
+    "image": "rea.jpg"
   },
   {
     "title": "West Side Tractor Sales",
     "subtitle": "Software Development Intern",
-    "date": "Summer & Winter 2018"
+    "date": "Summer & Winter 2018",
+    "image": "westside.jpg"
   },
   {
     "title": "Aubry Lane",
     "subtitle": "Software Development Intern",
-    "date": "Summer 2017"
+    "date": "Summer 2017",
+    "image": "aubrylane.jpg"
   }
 ]

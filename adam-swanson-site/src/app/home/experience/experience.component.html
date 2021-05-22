@@ -7,6 +7,9 @@
     </div>
     <div class="milestones">
       <div class="milestone" *ngFor="let milestone of experience">
+        <div class="image">
+          <img [src]="'assets/img/' + milestone.image" />
+        </div>
         <div class="info">
           <div class="title">{{milestone.title}}</div>
           <div class="subtitle">{{milestone.subtitle}}</div>
