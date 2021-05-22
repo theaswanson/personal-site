@@ -3,8 +3,8 @@
 @import 'cards';
 
 html {
-  min-height: 100%;
   font-size: 62.5%;
+  min-height: 100%;
 }
 
 body {
@@ -28,4 +28,14 @@ body {
     background-size: cover;
     background-attachment: fixed;
   }
+}
+
+a, a:visited {
+  color: orange;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
