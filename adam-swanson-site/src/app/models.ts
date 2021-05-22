@@ -25,6 +25,7 @@ export class Milestone {
   title: string;
   subtitle: string;
   date: string;
+  image?: string;
 }
 
 export class CategoricalSkills {
