@@ -14,23 +14,50 @@
         "category": "Frameworks",
         "skills": [
             {"name": "Angular", "imageName": "angular"},
+            {"name": "Aurelia", "imageName": "aurelia"},
             {"name": "Bootstrap", "imageName": "bootstrap"},
-            {"name": ".NET 5, .NET Core", "imageName": "dotnet"},
-            {"name": "Material Design", "imageName": "material"},
+            {"name": ".NET", "imageName": "dotnet"},
+            {"name": "Material", "imageName": "material"},
             {"name": "React", "imageName": "react"}
         ]
     },
     {
         "category": "Technologies",
-        "skills":
-        [
+        "skills": [
             {"name": "Docker", "imageName": "docker"},
             {"name": "EventStore", "imageName": "eventstore"},
             {"name": "Helm", "imageName": "helm"},
+            {"name": "Kafka", "imageName": "kafka"},
             {"name": "Kubernetes", "imageName": "kubernetes"},
-            {"name": "Progress OpenEdge", "imageName": "openedge"},
+            {"name": "OpenEdge", "imageName": "openedge"},
+            {"name": "PowerBI", "imageName": "powerbi"},
             {"name": "RabbitMQ", "imageName": "rabbitmq"},
             {"name": "Terraform", "imageName": "terraform"}
+        ]
+    },
+    {
+        "category": "Pipelines",
+        "skills": [
+            {"name": "GitHub Actions", "imageName": "actions"},
+            {"name": "Azure DevOps", "imageName": "azure"}
+        ]
+    },
+    {
+        "category": "Azure",
+        "skills": [
+            {"name": "ACR", "imageName": "acr"},
+            {"name": "AD", "imageName": "ad"},
+            {"name": "App Service", "imageName": "appservice"},
+            {"name": "DevOps", "imageName": "devops"},
+            {"name": "SQL Server", "imageName": "sql"}
+        ]
+    },
+    {
+        "category": "AWS",
+        "skills": [
+            {"name": "ECR"},
+            {"name": "EKS"},
+            {"name": "S3"}
         ]
     }
 ]
