@@ -10,7 +10,7 @@
         <div class="title">{{category}}</div>
         <div class="skills">
           <div class="skill" *ngFor="let skill of getSkills(category)">
-            <div class="image">
+            <div class="image" *ngIf="skill.imageName">
               <img [src]="getImagePath(skill, category)" />
             </div>
             <div class="name">{{skill.name}}</div>

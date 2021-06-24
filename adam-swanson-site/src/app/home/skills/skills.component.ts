@@ -25,8 +25,7 @@ export class SkillsComponent implements OnInit {
   }
   
   getImagePath(skill: Skill, category: string): string {
-    const imageName = skill.shortName ?? skill.name.toLowerCase();
-    return `${this.skillsImagesPath}/${category.toLowerCase()}/${imageName}.png`;
+    return `${this.skillsImagesPath}/${category.toLowerCase()}/${skill.imageName}.png`;
   }
 
   private getCategories(): string[] {
