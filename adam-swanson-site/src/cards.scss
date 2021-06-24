@@ -218,8 +218,9 @@
         }
 
         .image {
+          display: flex;
+          align-items: center;
           max-width: 4rem;
-          max-height: 4rem;
           padding-right: 1.5rem;
 
           img {
