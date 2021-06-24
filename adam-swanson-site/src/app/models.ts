@@ -35,5 +35,5 @@ export class CategoricalSkills {
 
 export class Skill {
   name: string;
-  shortName: string;
+  imageName: string;
 }
