@@ -11,8 +11,8 @@ export class HomeComponent implements OnInit {
   navigationItems: NavigationItem[] = [
     new NavigationItem('Home'),
     new NavigationItem('About'),
-    new NavigationItem('Experience'),
     new NavigationItem('Skills'),
+    new NavigationItem('Experience'),
     new NavigationItem('Achievements')
   ];
 
