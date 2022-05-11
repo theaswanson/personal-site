@@ -1,8 +1,14 @@
 [
   {
+    "title": "Olo",
+    "subtitle": "Software Engineer I",
+    "date": "June 2022 - Present",
+    "image": "olo.png"
+  },
+  {
     "title": "Core BTS",
     "subtitle": "Software Engineer",
-    "date": "June 2021 - Present",
+    "date": "June 2021 - May 2022",
     "image": "corebts.png"
   },
   {
