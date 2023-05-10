@@ -1,0 +1,63 @@
+[
+    {
+        "category": "Languages",
+        "skills": [
+            {"name": "C#", "imageName": "csharp"},
+            {"name": "C++", "imageName": "cplusplus"},
+            {"name": "Java", "imageName": "java"},
+            {"name": "JavaScript", "imageName": "javascript"},
+            {"name": "Swift", "imageName": "swift"},
+            {"name": "TypeScript", "imageName": "typescript"}
+        ]
+    },
+    {
+        "category": "Frameworks",
+        "skills": [
+            {"name": "Angular", "imageName": "angular"},
+            {"name": "Aurelia", "imageName": "aurelia"},
+            {"name": "Bootstrap", "imageName": "bootstrap"},
+            {"name": ".NET", "imageName": "dotnet"},
+            {"name": "Material", "imageName": "material"},
+            {"name": "React", "imageName": "react"}
+        ]
+    },
+    {
+        "category": "Technologies",
+        "skills": [
+            {"name": "Docker", "imageName": "docker"},
+            {"name": "EventStore", "imageName": "eventstore"},
+            {"name": "Helm", "imageName": "helm"},
+            {"name": "Kafka", "imageName": "kafka"},
+            {"name": "Kubernetes", "imageName": "kubernetes"},
+            {"name": "OpenEdge", "imageName": "openedge"},
+            {"name": "PowerBI", "imageName": "powerbi"},
+            {"name": "RabbitMQ", "imageName": "rabbitmq"},
+            {"name": "Terraform", "imageName": "terraform"}
+        ]
+    },
+    {
+        "category": "Pipelines",
+        "skills": [
+            {"name": "GitHub Actions", "imageName": "actions"},
+            {"name": "Azure DevOps", "imageName": "azure"}
+        ]
+    },
+    {
+        "category": "Azure",
+        "skills": [
+            {"name": "ACR", "imageName": "acr"},
+            {"name": "AD", "imageName": "ad"},
+            {"name": "App Service", "imageName": "appservice"},
+            {"name": "DevOps", "imageName": "devops"},
+            {"name": "SQL Server", "imageName": "sql"}
+        ]
+    },
+    {
+        "category": "AWS",
+        "skills": [
+            {"name": "ECR"},
+            {"name": "EKS"},
+            {"name": "S3"}
+        ]
+    }
+]

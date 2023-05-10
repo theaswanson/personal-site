@@ -1,0 +1,51 @@
+@import './variables.scss';
+
+.mobile-nav-spacer {
+  height: $mobile-nav-height;
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.mobile-navigation {
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  height: $mobile-nav-height;
+  display: flex;
+  flex-direction: column;
+
+  .icon {
+    padding: 2rem;
+    cursor: pointer;
+  }
+
+  ul {
+    background-color: #1b1b1b;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    li {
+      padding: 1.5rem 0;
+
+      a {
+        padding: 1.5rem 0;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+
+  .internal-items {
+    border-bottom: 1px solid $darkgray;
+  }
+}

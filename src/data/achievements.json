@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Outstanding Graduate - Overall School of Computer Sciences",
+    "subtitle": "Indiana Tech - Fort Wayne, IN",
+    "date": "November 2020",
+    "image": "indiana-tech.jpg"
+  },
+  {
+    "title": "B.S. in Software Engineering",
+    "subtitle": "Indiana Tech - Fort Wayne, IN",
+    "date": "May 2020",
+    "image": "indiana-tech.jpg"
+  },
+  {
+    "title": "Honorable Mention - Intern of the Year",
+    "subtitle": "Indiana Tech - Fort Wayne, IN",
+    "date": "May 2020",
+    "image": "indiana-tech.jpg"
+  },
+  {
+    "title": "Completion of GFW Fellows Program",
+    "subtitle": "Greater Fort Wayne Inc. - Fort Wayne, IN",
+    "date": "November 2019",
+    "image": "gfw.jpg"
+  },
+  {
+    "title": "Honorable Mention - Intern of the Year",
+    "subtitle": "Indiana Tech - Fort Wayne, IN",
+    "date": "May 2019",
+    "image": "indiana-tech.jpg"
+  },
+  {
+    "title": "Eagle Scout",
+    "subtitle": "Troop 325 - Lafayette, IN",
+    "date": "December 2014",
+    "image": "bsa.jpg"
+  },
+  {
+    "title": "Distinguished Citizen Award",
+    "subtitle": "City of Lafayette, IN",
+    "date": "December 2014",
+    "image": "lafayette.jpg"
+  },
+  {
+    "title": "Recognition of Eagle Scout Rank",
+    "subtitle": "Indiana General Assembly",
+    "date": "December 2014",
+    "image": "indiana.jpg"
+  }
+]
