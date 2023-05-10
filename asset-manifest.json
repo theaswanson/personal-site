@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fe39cbcf.css",
+    "main.js": "/static/js/main.3f943aeb.js",
+    "static/js/787.f41bcf90.chunk.js": "/static/js/787.f41bcf90.chunk.js",
+    "static/media/waterfall.jpg": "/static/media/waterfall.d097a720fc781083bf64.jpg",
+    "index.html": "/index.html",
+    "main.fe39cbcf.css.map": "/static/css/main.fe39cbcf.css.map",
+    "main.3f943aeb.js.map": "/static/js/main.3f943aeb.js.map",
+    "787.f41bcf90.chunk.js.map": "/static/js/787.f41bcf90.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe39cbcf.css",
+    "static/js/main.3f943aeb.js"
+  ]
+}
