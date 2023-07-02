@@ -52,7 +52,7 @@ function About() {
           </a>
           . I'm also sharing my knowledge with others and helping people learn
           from my experiences through my{" "}
-          <a href="https://blog.layerseven.net" target="_blank">
+          <a href="https://blog.adamswanson.dev" target="_blank">
             blog
           </a>
           !

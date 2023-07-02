@@ -19,7 +19,7 @@ function App() {
   ];
 
   const externalNavigationItems = [
-    { title: "Blog", url: "https://blog.layerseven.net" },
+    { title: "Blog", url: "https://blog.adamswanson.dev" },
   ];
 
   return (
