@@ -1,5 +1,5 @@
-# [Personal Site](https://adam.layerseven.net)
+# [Personal Site](https://adamswanson.dev)
 
 ![Personal site screenshot](docs/screenshot.jpg "Homepage")
 
-This is the code for my [personal website](https://adam.layerseven.net), built with React. Currently serves as my online resume!
+This is the code for my [personal website](https://adamswanson.dev), built with React. Currently serves as my online resume!

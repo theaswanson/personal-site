@@ -1,7 +1,7 @@
 {
   "name": "adam-swanson-react",
   "version": "0.1.0",
-  "homepage": "https://adam.layerseven.net",
+  "homepage": "https://adamswanson.dev",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
