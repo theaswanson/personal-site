@@ -4,14 +4,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
   faLinkedin,
-  faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { faPenSquare } from "@fortawesome/free-solid-svg-icons";
 import { SocialItem } from "./models";
+import { faTwitterX } from "./faTwitterX";
 
 function Header() {
   const socialItems: SocialItem[] = [
-    { icon: faTwitter, href: "https://twitter.com/crisp2020" },
+    { icon: faTwitterX, href: "https://x.com/crisp2020" },
     { icon: faLinkedin, href: "https://www.linkedin.com/in/adam-swanson/" },
     { icon: faGithub, href: "https://github.com/theaswanson" },
     { icon: faPenSquare, href: "https://blog.adamswanson.dev" },

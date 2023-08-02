@@ -61,8 +61,8 @@ function About() {
           If you have any questions or would like to connect, please{" "}
           <a href="mailto:layersevenmail@gmail.com">email me</a> or message me
           on{" "}
-          <a href="https://twitter.com/crisp2020" target="_blank">
-            Twitter
+          <a href="https://x.com/crisp2020" target="_blank">
+            X
           </a>
           .
         </div>
