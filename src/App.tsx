@@ -48,9 +48,6 @@ function App() {
         <div className="list-item">
           <Achievements />
         </div>
-        {/*
-        <app-experience className="list-item"></app-experience>
-        <app-achievements className="list-item"></app-achievements> */}
       </div>
       <div className="column"></div>
     </div>
