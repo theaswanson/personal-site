@@ -28,7 +28,7 @@ export class Milestone {
   image?: string;
 }
 
-export class CategoricalSkills {
+export class SkillGroup {
   category?: string;
   skills?: Skill[];
 }

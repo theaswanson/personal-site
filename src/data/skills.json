@@ -22,28 +22,39 @@
         ]
     },
     {
-        "category": "Technologies",
+        "category": "Infrastructure",
         "skills": [
             {"name": "Docker", "imageName": "docker"},
             {"name": "EventStore", "imageName": "eventstore"},
             {"name": "Helm", "imageName": "helm"},
             {"name": "Kafka", "imageName": "kafka"},
             {"name": "Kubernetes", "imageName": "kubernetes"},
-            {"name": "OpenEdge", "imageName": "openedge"},
-            {"name": "PowerBI", "imageName": "powerbi"},
+
             {"name": "RabbitMQ", "imageName": "rabbitmq"},
             {"name": "Terraform", "imageName": "terraform"}
+
+        ]
+    },
+    {
+        "category": "Metrics",
+        "skills": [
+            {"name": "DataDog", "imageName": "datadog"},
+            {"name": "Raygun", "imageName": "raygun"},
+            {"name": "Sumo Logic", "imageName": "sumologic"}
         ]
     },
     {
         "category": "Pipelines",
         "skills": [
+            {"name": "Azure DevOps", "imageName": "azure"},
             {"name": "GitHub Actions", "imageName": "actions"},
-            {"name": "Azure DevOps", "imageName": "azure"}
+            {"name": "Octopus", "imageName": "octopus"},
+            {"name": "TeamCity", "imageName": "teamcity"}
         ]
     },
     {
         "category": "Azure",
+        "imageFolderName": "azure",
         "skills": [
             {"name": "ACR", "imageName": "acr"},
             {"name": "AD", "imageName": "ad"},
@@ -58,6 +69,13 @@
             {"name": "ECR"},
             {"name": "EKS"},
             {"name": "S3"}
+        ]
+    },
+    {
+        "category": "Other",
+        "skills": [
+            {"name": "OpenEdge", "imageName": "openedge"},
+            {"name": "PowerBI", "imageName": "powerbi"}
         ]
     }
 ]
