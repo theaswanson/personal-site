@@ -1,4 +1,3 @@
-import React from "react";
 import { Milestone } from "./models";
 import experienceJson from "./data/experience.json";
 
@@ -17,7 +16,7 @@ function Experience() {
           {experience.map((e) => (
             <div className="milestone" key={e.title! + e.date}>
               <div className="image">
-                <img src={process.env.PUBLIC_URL + "/img/" + e.image} />
+                <img src={"/img/" + e.image} />
               </div>
               <div className="info">
                 <div className="title">{e.title}</div>

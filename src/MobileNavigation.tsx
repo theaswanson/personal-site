@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./MobileNavigation.scss";
 import { ExternalNavigationItem, NavigationItem } from "./models";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

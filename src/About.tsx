@@ -1,5 +1,3 @@
-import React from "react";
-
 function About() {
   const navigate = (fragment?: string) => {
     if (fragment) {

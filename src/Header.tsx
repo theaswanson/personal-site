@@ -1,10 +1,6 @@
-import React from "react";
 import "./Header.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faPenSquare } from "@fortawesome/free-solid-svg-icons";
 import { SocialItem } from "./models";
 import { faTwitterX } from "./faTwitterX";
@@ -36,7 +32,7 @@ function Header() {
           </div>
         </div>
         <div className="image">
-          <img src={process.env.PUBLIC_URL + "/img/adam.jpg"} />
+          <img src={"/img/adam.jpg"} />
         </div>
       </div>
     </div>

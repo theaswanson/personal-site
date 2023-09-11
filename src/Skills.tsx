@@ -1,10 +1,9 @@
-import React from "react";
 import "./Skills.scss";
 import skillsJson from "./data/skills.json";
 import { Skill, SkillGroup } from "./models";
 
 function Skills() {
-  const skillsImagesPath = process.env.PUBLIC_URL + "/img/skills";
+  const skillsImagesPath = "/img/skills";
   const skillGroups = skillsJson as SkillGroup[];
 
   const getSkills = (category: string) => {

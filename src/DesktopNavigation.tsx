@@ -1,4 +1,3 @@
-import React from "react";
 import "./DesktopNavigation.scss";
 import { ExternalNavigationItem, NavigationItem } from "./models";
 
