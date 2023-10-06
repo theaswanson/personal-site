@@ -1,12 +1,12 @@
 import "./App.scss";
-import DesktopNavigation from "./DesktopNavigation";
+import DesktopNavigation from "./components/DesktopNavigation";
 import { NavigationItem } from "./models";
-import MobileNavigation from "./MobileNavigation";
-import Header from "./Header";
-import About from "./About";
-import Skills from "./Skills";
-import Experience from "./Experience";
-import Achievements from "./Achievements";
+import MobileNavigation from "./components/MobileNavigation";
+import Header from "./components/Header";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Experience from "./components/Experience";
+import Achievements from "./components/Achievements";
 
 function App() {
   const navigationItems = [

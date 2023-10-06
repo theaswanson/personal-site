@@ -1,0 +1,11 @@
+.icon {
+  svg {
+    &:hover {
+      color: #aaaaaa;
+    }
+
+    &:active {
+      color: #888888;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import "../variables.scss";
+
+.skills-list {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 4rem;
+  padding-top: 1rem;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 3rem;
+  }
+
+  @media screen and (min-width: $desktop-lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: $desktop-xl) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
