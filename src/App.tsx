@@ -7,6 +7,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Achievements from "./components/Achievements";
+import Volunteering from "./components/Volunteering";
 
 function App() {
   const navigationItems = [
@@ -14,6 +15,7 @@ function App() {
     new NavigationItem("About"),
     new NavigationItem("Skills"),
     new NavigationItem("Experience"),
+    new NavigationItem("Volunteering"),
     new NavigationItem("Achievements"),
   ];
 
@@ -43,6 +45,9 @@ function App() {
         </div>
         <div className="list-item">
           <Experience />
+        </div>
+        <div className="list-item">
+          <Volunteering />
         </div>
         <div className="list-item">
           <Achievements />

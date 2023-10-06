@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 .header-card {
   height: fit-content;
@@ -182,6 +182,13 @@
 
         .subtitle {
           padding-top: 1rem;
+          font-size: 2rem;
+          font-weight: 300;
+          font-style: italic;
+        }
+
+        .link {
+          padding-top: 0.5rem;
           font-size: 2rem;
           font-weight: 300;
           font-style: italic;

@@ -28,6 +28,11 @@ export class Milestone {
   image?: string;
 }
 
+export interface VolunteerPosition extends Milestone {
+  url: string;
+  urlTitle: string;
+}
+
 export class SkillGroup {
   category?: string;
   skills?: Skill[];
