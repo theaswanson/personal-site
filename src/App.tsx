@@ -1,13 +1,13 @@
 import "./App.scss";
-import DesktopNavigation from "./components/DesktopNavigation";
-import { NavigationItem } from "./models";
-import MobileNavigation from "./components/MobileNavigation";
-import Header from "./components/Header";
 import About from "./components/About";
-import Skills from "./components/Skills";
-import Experience from "./components/Experience";
 import Achievements from "./components/Achievements";
+import DesktopNavigation from "./components/DesktopNavigation";
+import Experience from "./components/Experience";
+import Header from "./components/Header";
+import MobileNavigation from "./components/MobileNavigation";
+import Skills from "./components/Skills";
 import Volunteering from "./components/Volunteering";
+import { NavigationItem } from "./models";
 
 function App() {
   const navigationItems = [
@@ -24,36 +24,37 @@ function App() {
   ];
 
   return (
-    <div className="content" id="home">
-      <div className="column">
+    // test
+    <div className='content' id='home'>
+      <div className='column'>
         <DesktopNavigation
           navigationItems={navigationItems}
           externalNavigationItems={externalNavigationItems}
         />
       </div>
-      <div className="main-column">
+      <div className='main-column'>
         <MobileNavigation
           navigationItems={navigationItems}
           externalNavigationItems={externalNavigationItems}
         />
         <Header />
-        <div className="list-item">
+        <div className='list-item'>
           <About />
         </div>
-        <div className="list-item">
+        <div className='list-item'>
           <Skills />
         </div>
-        <div className="list-item">
+        <div className='list-item'>
           <Experience />
         </div>
-        <div className="list-item">
+        <div className='list-item'>
           <Volunteering />
         </div>
-        <div className="list-item">
+        <div className='list-item'>
           <Achievements />
         </div>
       </div>
-      <div className="column"></div>
+      <div className='column'></div>
     </div>
   );
 }
