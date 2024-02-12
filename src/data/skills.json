@@ -1,38 +1,21 @@
 [
     {
-        "category": "Languages",
+        "category": "Frontend",
         "skills": [
-            {"name": "C#", "imageName": "csharp"},
-            {"name": "C++", "imageName": "cplusplus"},
-            {"name": "Java", "imageName": "java"},
+            {"name": "React", "imageName": "react"},
             {"name": "JavaScript", "imageName": "javascript"},
-            {"name": "Swift", "imageName": "swift"},
-            {"name": "TypeScript", "imageName": "typescript"}
+            {"name": "TypeScript", "imageName": "typescript"},
+            {"name": "Angular", "imageName": "angular"}
         ]
     },
     {
-        "category": "Frameworks",
+        "category": "Backend",
         "skills": [
-            {"name": "Angular", "imageName": "angular"},
-            {"name": "Aurelia", "imageName": "aurelia"},
-            {"name": "Bootstrap", "imageName": "bootstrap"},
             {"name": ".NET", "imageName": "dotnet"},
-            {"name": "Material", "imageName": "material"},
-            {"name": "React", "imageName": "react"}
-        ]
-    },
-    {
-        "category": "Infrastructure",
-        "skills": [
+            {"name": "C#", "imageName": "csharp"},
+            {"name": "SQL Server", "imageName": "sql"},
             {"name": "Docker", "imageName": "docker"},
-            {"name": "EventStore", "imageName": "eventstore"},
-            {"name": "Helm", "imageName": "helm"},
-            {"name": "Kafka", "imageName": "kafka"},
-            {"name": "Kubernetes", "imageName": "kubernetes"},
-
-            {"name": "RabbitMQ", "imageName": "rabbitmq"},
             {"name": "Terraform", "imageName": "terraform"}
-
         ]
     },
     {
@@ -46,36 +29,10 @@
     {
         "category": "Pipelines",
         "skills": [
-            {"name": "Azure DevOps", "imageName": "azure"},
             {"name": "GitHub Actions", "imageName": "actions"},
+            {"name": "TeamCity", "imageName": "teamcity"},
             {"name": "Octopus", "imageName": "octopus"},
-            {"name": "TeamCity", "imageName": "teamcity"}
-        ]
-    },
-    {
-        "category": "Azure",
-        "imageFolderName": "azure",
-        "skills": [
-            {"name": "ACR", "imageName": "acr"},
-            {"name": "AD", "imageName": "ad"},
-            {"name": "App Service", "imageName": "appservice"},
-            {"name": "DevOps", "imageName": "devops"},
-            {"name": "SQL Server", "imageName": "sql"}
-        ]
-    },
-    {
-        "category": "AWS",
-        "skills": [
-            {"name": "ECR"},
-            {"name": "EKS"},
-            {"name": "S3"}
-        ]
-    },
-    {
-        "category": "Other",
-        "skills": [
-            {"name": "OpenEdge", "imageName": "openedge"},
-            {"name": "PowerBI", "imageName": "powerbi"}
+            {"name": "Azure DevOps", "imageName": "azure"}
         ]
     }
 ]
