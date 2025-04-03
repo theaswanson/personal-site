@@ -19,7 +19,7 @@ function Header() {
         <div className='info'>
           <div className='header'>
             <div className='title'>Adam Swanson</div>
-            <div className='subtitle'>Software Developer</div>
+            <div className='subtitle'>Senior Software Engineer</div>
           </div>
           <div className='icons'>
             {socialItems.map((i) => (
