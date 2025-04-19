@@ -1,5 +1,7 @@
 .icon {
   svg {
+    transition: color 0.25s;
+
     &:hover {
       color: #aaaaaa;
     }
