@@ -24,7 +24,7 @@ const socialItems: SocialItem[] = [
   { icon: faPenSquare, href: "https://blog.adamswanson.dev" },
 ];
 
-const Header = () => (
+export const Header = () => (
   <HeaderCard
     title='Adam Swanson'
     subtitle='Senior Software Engineer'
@@ -37,5 +37,3 @@ const Header = () => (
     </div>
   </HeaderCard>
 );
-
-export default Header;

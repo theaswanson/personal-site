@@ -4,7 +4,7 @@ import { TitleCard } from "./Cards";
 
 const volunteeringPositions = volunteeringJson as VolunteerPosition[];
 
-const Volunteering = () => (
+export const Volunteering = () => (
   <TitleCard id='volunteering' title='Volunteering'>
     <div className='milestones'>
       {volunteeringPositions.map((e) => (
@@ -27,5 +27,3 @@ const Volunteering = () => (
     </div>
   </TitleCard>
 );
-
-export default Volunteering;

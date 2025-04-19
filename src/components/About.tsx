@@ -1,7 +1,7 @@
 import { navigate } from "../utils";
 import { TitleCard } from "./Cards";
 
-const About = () => (
+export const About = () => (
   <TitleCard id='about' title='About'>
     <div className='text'>
       Hello there! I'm a software developer who loves to learn and help others
@@ -47,5 +47,3 @@ const About = () => (
     </div>
   </TitleCard>
 );
-
-export default About;

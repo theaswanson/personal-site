@@ -10,7 +10,7 @@ type MobileNavigationProps = {
   externalNavigationItems: ExternalNavigationItem[];
 };
 
-const MobileNavigation = ({
+export const MobileNavigation = ({
   navigationItems,
   externalNavigationItems,
 }: MobileNavigationProps) => {
@@ -56,5 +56,3 @@ const MobileNavigation = ({
     </>
   );
 };
-
-export default MobileNavigation;

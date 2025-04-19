@@ -8,7 +8,7 @@ interface DesktopNavigationProps {
   externalNavigationItems: ExternalNavigationItem[];
 }
 
-const DesktopNavigation = ({
+export const DesktopNavigation = ({
   navigationItems,
   externalNavigationItems,
 }: DesktopNavigationProps) => (
@@ -33,5 +33,3 @@ const DesktopNavigation = ({
     </>
   </Card>
 );
-
-export default DesktopNavigation;

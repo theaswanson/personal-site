@@ -1,12 +1,12 @@
 import "./App.scss";
-import About from "./components/About";
-import Achievements from "./components/Achievements";
-import DesktopNavigation from "./components/DesktopNavigation";
-import Experience from "./components/Experience";
-import Header from "./components/Header";
-import MobileNavigation from "./components/MobileNavigation";
-import Skills from "./components/Skills";
-import Volunteering from "./components/Volunteering";
+import { About } from "./components/About";
+import { Achievements } from "./components/Achievements";
+import { DesktopNavigation } from "./components/DesktopNavigation";
+import { Experience } from "./components/Experience";
+import { Header } from "./components/Header";
+import { MobileNavigation } from "./components/MobileNavigation";
+import { Skills } from "./components/Skills";
+import { Volunteering } from "./components/Volunteering";
 import { NavigationItem } from "./models";
 
 const navigationItems = [
@@ -22,7 +22,7 @@ const externalNavigationItems = [
   { title: "Blog", url: "https://blog.adamswanson.dev" },
 ];
 
-const App = () => (
+export const App = () => (
   <div className='content' id='home'>
     <div className='column'>
       <DesktopNavigation
@@ -45,5 +45,3 @@ const App = () => (
     <div className='column'></div>
   </div>
 );
-
-export default App;

@@ -12,7 +12,7 @@ const getSkills = (category: string) =>
 const getImagePath = (skill: Skill) =>
   `${skillsImagesPath}/${skill.imageName}.png`;
 
-const Skills = () => (
+export const Skills = () => (
   <TitleCard id='skills' title='Skills'>
     <div className='skills-list'>
       {skillGroups.map((skillGroup) => (
@@ -35,5 +35,3 @@ const Skills = () => (
     </div>
   </TitleCard>
 );
-
-export default Skills;

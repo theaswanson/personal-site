@@ -11,34 +11,34 @@ export class NavigationItem {
   }
 }
 
-export class ExternalNavigationItem {
+export type ExternalNavigationItem = {
   title?: string;
   url?: string;
-}
+};
 
-export class SocialItem {
+export type SocialItem = {
   icon?: IconDefinition;
   href?: string;
-}
+};
 
-export class Milestone {
+export type Milestone = {
   title?: string;
   subtitle?: string;
   date?: string;
   image?: string;
-}
+};
 
-export interface VolunteerPosition extends Milestone {
+export type VolunteerPosition = Milestone & {
   url: string;
   urlTitle: string;
-}
+};
 
-export class SkillGroup {
+export type SkillGroup = {
   category?: string;
   skills?: Skill[];
-}
+};
 
-export class Skill {
+export type Skill = {
   name?: string;
   imageName?: string;
-}
+};

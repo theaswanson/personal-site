@@ -4,7 +4,7 @@ import { TitleCard } from "./Cards";
 
 const achievements = achievementsJson as Milestone[];
 
-const Achievements = () => {
+export const Achievements = () => {
   return (
     <TitleCard id='achievements' title='Achievements'>
       <div className='milestones'>
@@ -24,5 +24,3 @@ const Achievements = () => {
     </TitleCard>
   );
 };
-
-export default Achievements;

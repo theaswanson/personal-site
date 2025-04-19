@@ -4,7 +4,7 @@ import { TitleCard } from "./Cards";
 
 const experience = experienceJson as Milestone[];
 
-const Experience = () => {
+export const Experience = () => {
   return (
     <TitleCard id='experience' title='Experience'>
       <div className='milestones'>
@@ -24,5 +24,3 @@ const Experience = () => {
     </TitleCard>
   );
 };
-
-export default Experience;
