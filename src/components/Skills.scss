@@ -1,4 +1,4 @@
-@import "../variables.scss";
+@use "../variables.scss";
 
 .skills-list {
   display: grid;
@@ -6,15 +6,15 @@
   gap: 4rem;
   padding-top: 1rem;
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: variables.$desktop) {
     padding-top: 3rem;
   }
 
-  @media screen and (min-width: $desktop-lg) {
+  @media screen and (min-width: variables.$desktop-lg) {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media screen and (min-width: $desktop-xl) {
+  @media screen and (min-width: variables.$desktop-xl) {
     grid-template-columns: repeat(3, 1fr);
   }
 }

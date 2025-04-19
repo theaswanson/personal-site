@@ -1,13 +1,13 @@
-@import "../variables.scss";
+@use "../variables.scss";
 
 .desktop-navigation {
   display: none;
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: variables.$desktop) {
     display: block;
     width: fit-content;
     position: sticky;
-    top: $column-padding;
+    top: variables.$column-padding;
 
     .card-content {
       padding: 1.5rem 3rem;
@@ -40,7 +40,7 @@
     }
 
     .internal-items {
-      border-bottom: 1px solid $darkgray;
+      border-bottom: 1px solid variables.$darkgray;
       padding-bottom: 1rem;
     }
 

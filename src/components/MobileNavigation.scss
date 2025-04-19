@@ -1,9 +1,9 @@
-@import "../variables.scss";
+@use "../variables.scss";
 
 .mobile-nav-spacer {
-  height: $mobile-nav-height;
+  height: variables.$mobile-nav-height;
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: variables.$desktop) {
     display: none;
   }
 }
@@ -13,7 +13,7 @@
   background-color: black;
   position: fixed;
   top: 0;
-  height: $mobile-nav-height;
+  height: variables.$mobile-nav-height;
   display: flex;
   flex-direction: column;
 
@@ -41,11 +41,11 @@
     }
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: variables.$desktop) {
     display: none;
   }
 
   .internal-items {
-    border-bottom: 1px solid $darkgray;
+    border-bottom: 1px solid variables.$darkgray;
   }
 }

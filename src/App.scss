@@ -1,5 +1,5 @@
+@use "variables";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import "variables";
 
 html {
   font-size: 62.5%;
@@ -21,7 +21,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: variables.$desktop) {
     font-size: 3rem;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
       transparent url("/img/mountains.jpg") 0% 0% no-repeat padding-box;
@@ -45,11 +45,11 @@ a:hover {
 .content {
   display: flex;
 
-  @media screen and (min-width: $desktop) {
-    padding-top: $column-padding;
+  @media screen and (min-width: variables.$desktop) {
+    padding-top: variables.$column-padding;
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: variables.$desktop) {
     .column {
       display: flex;
       justify-content: flex-end;
@@ -57,7 +57,7 @@ a:hover {
       box-sizing: border-box;
 
       &:first-child {
-        margin-left: $column-padding;
+        margin-left: variables.$column-padding;
       }
     }
   }
@@ -67,13 +67,13 @@ a:hover {
   flex: 1 1;
   box-sizing: border-box;
 
-  @media screen and (min-width: $desktop) {
-    margin: 0 $column-padding;
-    flex: 1 1 $desktop;
-    max-width: $desktop;
+  @media screen and (min-width: variables.$desktop) {
+    margin: 0 variables.$column-padding;
+    flex: 1 1 variables.$desktop;
+    max-width: variables.$desktop;
 
     > .list-item {
-      margin: $column-padding 0; //TODO: fix this hack
+      margin: variables.$column-padding 0; //TODO: fix this hack
     }
   }
 }

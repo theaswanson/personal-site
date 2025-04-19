@@ -1,9 +1,9 @@
-@import "../variables";
+@use "../variables";
 
 .header-card {
   height: fit-content;
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: variables.$desktop) {
     background: rgba(255, 255, 255, 0.1) 0% 0% no-repeat padding-box;
     border-radius: 1.5rem;
   }
@@ -16,7 +16,7 @@
     justify-content: space-between;
     align-items: center;
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: variables.$desktop) {
       padding: 5rem;
       border-radius: 1.5rem;
       backdrop-filter: blur(1rem) brightness(60%);
@@ -34,18 +34,17 @@
       .header {
         text-align: center;
 
-        @media screen and (min-width: $desktop) {
+        @media screen and (min-width: variables.$desktop) {
           text-align: left;
         }
 
         .title {
+          font-weight: bold;
           font-size: 3rem;
 
-          @media screen and (min-width: $desktop) {
+          @media screen and (min-width: variables.$desktop) {
             font-size: 5rem;
           }
-
-          font-weight: bold;
         }
 
         .subtitle {
@@ -59,7 +58,7 @@
         display: flex;
         justify-content: space-between;
 
-        @media screen and (min-width: $desktop) {
+        @media screen and (min-width: variables.$desktop) {
           padding-top: 3rem;
         }
 
@@ -88,12 +87,12 @@
 
 .card {
   height: fit-content;
-  scroll-margin-top: $mobile-nav-height;
+  scroll-margin-top: variables.$mobile-nav-height;
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: variables.$desktop) {
     background: rgba(255, 255, 255, 0.1) 0% 0% no-repeat padding-box;
     border-radius: 1.5rem;
-    scroll-margin-top: $column-padding;
+    scroll-margin-top: variables.$column-padding;
   }
 
   .card-content {
@@ -103,7 +102,7 @@
     flex-direction: column;
     justify-content: space-between;
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: variables.$desktop) {
       padding: 5rem;
       border-radius: 1.5rem;
       backdrop-filter: blur(1rem) brightness(60%);
@@ -123,9 +122,9 @@
           font-size: 3rem;
           font-weight: bold;
           padding-bottom: 1rem;
-          border-bottom: 1px solid $darkgray;
+          border-bottom: 1px solid variables.$darkgray;
 
-          @media screen and (min-width: $desktop) {
+          @media screen and (min-width: variables.$desktop) {
             font-size: 5rem;
           }
         }
@@ -136,7 +135,7 @@
       padding-top: 1rem;
       font: normal normal 300 20px/27px Roboto;
 
-      @media screen and (min-width: $desktop) {
+      @media screen and (min-width: variables.$desktop) {
         padding-top: 3rem;
       }
     }
@@ -148,7 +147,7 @@
 
       padding-top: 2rem;
 
-      @media screen and (min-width: $desktop-lg) {
+      @media screen and (min-width: variables.$desktop-lg) {
         padding-top: 3rem;
       }
     }
@@ -157,7 +156,7 @@
       display: flex;
       flex-direction: column;
 
-      @media screen and (min-width: $desktop-lg) {
+      @media screen and (min-width: variables.$desktop-lg) {
         flex-direction: row;
         align-items: center;
       }
@@ -168,7 +167,7 @@
         padding-right: 3rem;
         padding-bottom: 1rem;
 
-        @media screen and (min-width: $desktop-lg) {
+        @media screen and (min-width: variables.$desktop-lg) {
           padding-bottom: 0;
         }
 
@@ -205,7 +204,7 @@
         font-size: 2rem;
         font-weight: 400;
 
-        @media screen and (min-width: $desktop-lg) {
+        @media screen and (min-width: variables.$desktop-lg) {
           text-align: right;
         }
       }

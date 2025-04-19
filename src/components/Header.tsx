@@ -1,10 +1,13 @@
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faXTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 import { faPenSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SocialItem } from "../models";
 import { HeaderCard } from "./Cards";
 import "./Header.scss";
-import { faTwitterX } from "./faTwitterX";
 
 const Icon = ({ item }: { item: SocialItem }) => (
   <div className='icon' key={item.href}>
@@ -17,7 +20,7 @@ const Icon = ({ item }: { item: SocialItem }) => (
 const socialItems: SocialItem[] = [
   { icon: faLinkedin, href: "https://www.linkedin.com/in/adam-swanson/" },
   { icon: faGithub, href: "https://github.com/theaswanson" },
-  { icon: faTwitterX, href: "https://x.com/crisp2020" },
+  { icon: faXTwitter, href: "https://x.com/crisp2020" },
   { icon: faPenSquare, href: "https://blog.adamswanson.dev" },
 ];
 
