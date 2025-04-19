@@ -11,7 +11,7 @@ export const Card = ({
   className,
   children,
 }: PropsWithChildren<CardProps>) => (
-  <div className={`card ${className}`} id={id}>
+  <div className={className ? `card ${className}` : "card"} id={id}>
     <div className='card-content'>{children}</div>
   </div>
 );
