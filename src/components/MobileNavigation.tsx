@@ -1,8 +1,9 @@
-import { useState } from "react";
-import "./MobileNavigation.scss";
-import { ExternalNavigationItem, NavigationItem } from "../models";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
+import { ExternalNavigationItem, NavigationItem } from "../models";
+import { scrollToElement } from "../utils";
+import "./MobileNavigation.scss";
 
 interface MobileNavigationProps {
   navigationItems: NavigationItem[];
@@ -29,21 +30,16 @@ function MobileNavigation({
     return undefined;
   };
 
-  const scrollToElement = (id: string) => {
-    const element = document.querySelector(`#${id}`);
-    element && element.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <>
-      <div className="mobile-nav-spacer"></div>
-      <div className="mobile-navigation">
-        <div className="icon" onClick={() => toggleNavigation()}>
+      <div className='mobile-nav-spacer'></div>
+      <div className='mobile-navigation'>
+        <div className='icon' onClick={() => toggleNavigation()}>
           <FontAwesomeIcon icon={faBars} size={"lg"} />
         </div>
         {navigationOpen && (
           <>
-            <ul className="internal-items">
+            <ul className='internal-items'>
               {navigationItems.map((i) => (
                 <li onClick={() => navigate(i.fragment)} key={i.title}>
                   <a>{i.title}</a>
@@ -53,7 +49,7 @@ function MobileNavigation({
             <ul>
               {externalNavigationItems.map((i) => (
                 <li key={i.title}>
-                  <a href={i.url} target="_blank">
+                  <a href={i.url} target='_blank'>
                     {i.title}
                   </a>
                 </li>
