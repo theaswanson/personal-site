@@ -2,9 +2,9 @@ import experienceJson from "../data/experience.json";
 import { Milestone } from "../models";
 import { TitleCard } from "./Cards";
 
-function Experience() {
-  const experience = experienceJson as Milestone[];
+const experience = experienceJson as Milestone[];
 
+const Experience = () => {
   return (
     <TitleCard id='experience' title='Experience'>
       <div className='milestones'>
@@ -23,6 +23,6 @@ function Experience() {
       </div>
     </TitleCard>
   );
-}
+};
 
 export default Experience;

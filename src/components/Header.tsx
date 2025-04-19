@@ -29,7 +29,7 @@ const Header = () => (
   >
     <div className='icons'>
       {socialItems.map((i) => (
-        <Icon item={i} />
+        <Icon item={i} key={i.href} />
       ))}
     </div>
   </HeaderCard>

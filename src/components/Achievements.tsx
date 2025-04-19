@@ -2,9 +2,9 @@ import achievementsJson from "../data/achievements.json";
 import { Milestone } from "../models";
 import { TitleCard } from "./Cards";
 
-function Achievements() {
-  const achievements = achievementsJson as Milestone[];
+const achievements = achievementsJson as Milestone[];
 
+const Achievements = () => {
   return (
     <TitleCard id='achievements' title='Achievements'>
       <div className='milestones'>
@@ -23,6 +23,6 @@ function Achievements() {
       </div>
     </TitleCard>
   );
-}
+};
 
 export default Achievements;
