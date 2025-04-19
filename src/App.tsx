@@ -36,21 +36,11 @@ const App = () => (
         externalNavigationItems={externalNavigationItems}
       />
       <Header />
-      <div className='list-item'>
-        <About />
-      </div>
-      <div className='list-item'>
-        <Skills />
-      </div>
-      <div className='list-item'>
-        <Experience />
-      </div>
-      <div className='list-item'>
-        <Volunteering />
-      </div>
-      <div className='list-item'>
-        <Achievements />
-      </div>
+      <About />
+      <Skills />
+      <Experience />
+      <Volunteering />
+      <Achievements />
     </div>
     <div className='column'></div>
   </div>

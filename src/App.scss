@@ -64,16 +64,14 @@ a:hover {
 }
 
 .main-column {
-  flex: 1 1;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: variables.$column-padding;
 
   @media screen and (min-width: variables.$desktop) {
-    margin: 0 variables.$column-padding;
-    flex: 1 1 variables.$desktop;
+    margin: 0 variables.$column-padding variables.$column-padding
+      variables.$column-padding;
+    gap: variables.$column-padding;
     max-width: variables.$desktop;
-
-    > .list-item {
-      margin: variables.$column-padding 0; //TODO: fix this hack
-    }
   }
 }
