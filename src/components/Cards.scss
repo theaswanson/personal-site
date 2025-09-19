@@ -64,6 +64,11 @@
 
         .icon {
           cursor: pointer;
+          transition-duration: 0.25s;
+
+          &:hover {
+            transform: rotate(-3deg);
+          }
 
           a {
             color: white;
