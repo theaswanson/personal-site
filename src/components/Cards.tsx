@@ -58,7 +58,10 @@ export const HeaderCard = ({
         {children}
       </div>
       <div className='image'>
-        <img src={img} />
+        <div className='inner myspace'>
+          <a href='https://myspace.adamswanson.dev'>Secret!</a>
+        </div>
+        <img className='inner' src={img} />
       </div>
     </div>
   </div>

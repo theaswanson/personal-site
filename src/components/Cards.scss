@@ -77,9 +77,32 @@
     }
 
     .image {
+      background-color: black;
+      border-radius: 2rem;
+      height: 20rem;
+      display: grid;
+      align-items: baseline;
+      justify-items: center;
+      grid-template-areas: "inner-div";
+
+      &:hover img {
+        transform: rotate(-7.5deg);
+        transform-origin: bottom left;
+      }
+
       img {
+        border: none;
         border-radius: 1.5rem;
         height: 20rem;
+        transition-duration: 0.25s;
+      }
+
+      .inner {
+        grid-area: inner-div;
+      }
+
+      .myspace {
+        font-size: 1.25rem;
       }
     }
   }
